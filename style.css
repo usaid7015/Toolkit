@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.toolkit{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.main{
+    display: flex;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px -20px;
+}
+
+img{
+    max-width: 35px;
+    margin-block-end: -45px;
+    outline-offset: 4px;
+    border-radius: 30px;
+}
+
+.text{
+    padding: 10px 20px;
+    color: white;
+    background-color: white;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.164);
+    transform: translateY(-40px);
+    border-radius: 30px;
+    position: relative;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    transition-delay: 1s;
+    transition: .8s ease;
+    -webkit-transition: .8s ease;
+    -moz-transition: .8s ease;
+    -ms-transition: .8s ease;
+    -o-transition: .8s ease;
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+img:hover + .text{
+    transform: translateY(-70px);
+    pointer-events: visible;
+    opacity: 1;
+}
+
+.text::before{
+    position: absolute;
+    padding: 8px;
+    background-color: white;
+    content: '';
+    left: 40%;
+    bottom: -4px;
+    transform: rotate(45deg);
+}
+
+.facebook{
+    background-color: #1877f2;
+}
+
+.twitter{
+    background-color: #03a9f4;
+}
+
+.instagram{
+    background-color:rgb(202, 11, 219);
+}
+.github{
+    background-color: #000000;
+}
+
+.facebook:before{
+    background-color: #1877f2;
+    content: '';
+    left: 40%;
+    color: white;
+}
+
+.twitter:before{
+    background-color: #03a9f4;
+    content: '';
+    left: 40%;
+    color: white;
+}
+
+.instagram:before{
+    background-color:rgb(202, 11, 219);
+    content: '';
+    left: 40%;
+    color: white;
+}
+
+.github:before{
+    background-color: #000000;
+    content: '';
+    left: 40%;
+    color: white;
+}
+
+.face{
+    outline: 2px solid #1877f2;
+}
+
+.twi{
+    outline: 2px solid #03a9f4;
+}
+.insta{
+    outline: 2px solid  rgb(202, 11, 219);
+}
+.git{
+    outline: 2px solid #000000;
+}
